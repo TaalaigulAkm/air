@@ -9,6 +9,9 @@ body * {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+/* HEADER */
+
 .header {
     position: absolute;
     top: 0;
@@ -36,11 +39,9 @@ body * {
     display: flex;
     justify-content: center;
 }
-
 .header__menu {
     display: flex;
     gap: 20px;
-   
 }
 .header__regis {
     display: flex;
@@ -65,6 +66,9 @@ body * {
     align-items: center;
     justify-content: center;
 }
+
+/* HERO */
+
 .hero {
     position: relative;
     padding: 120px 0 200px;
@@ -74,7 +78,7 @@ body * {
     background-repeat: no-repeat;
 }
 
- .hero__container {
+.hero__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,6 +125,9 @@ body * {
 .hero__link:hover::after {
     transform: translateX(4px);
 }
+
+/* BOOKING */
+
 .book {
     margin-top: -150px;
 }
@@ -264,7 +271,6 @@ body * {
     text-decoration-skip-ink: none;
     color: #151515;
     margin-top: 20px;
-    
 }
 .book__btn {
     position: absolute;
@@ -274,10 +280,78 @@ body * {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 40px auto 0; */
     width: 233px;
     height: 80px;
     border-radius: 10px;
     background: #656293;
     color: #fff;
 }
+
+/* CHARTER SERVICES */
+
+.charter__services {
+    padding-top: 100px;
+}
+.charter__services h2 {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #000;
+    margin-bottom: 131px;
+}
+.charter__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+.charter__item:first-of-type::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 523px;
+    background: #e5f4f6;
+    border-radius: 0 50px 50px 0;
+    left: -150px;
+    z-index: -1;
+}
+.charter__item:last-of-type::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 523px;
+    background: #e5f4f6;
+    border-radius: 50px 0 0 50px;
+    right: -150px;
+    z-index: -1;
+}
+.charter__img {
+   position: relative;
+}
+.charter__img img {
+    width: 589px;
+    border-radius: 20px;
+}
+.charter__content {
+    width: 463px;
+    height: 245px;
+}
+.charter__content h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+    letter-spacing: 0.3px;
+    margin-bottom: 18px;
+}
+.charter__content p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-align: justify;
+    color: rgba(21, 21, 21, 0.6);
+    margin: 0;
+}
+
