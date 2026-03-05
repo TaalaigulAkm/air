@@ -597,3 +597,39 @@ body * {
 .subscription__card:hover .subs_price small {
     color: #fff;
 }
+
+/* FOOTER */
+
+.footer {
+    padding: 50px 10px;
+    background: #656293;
+}
+.footer_logo {
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+}
+.footer_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_menu {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+.footer_menu a {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer_copy {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.7);
+}
